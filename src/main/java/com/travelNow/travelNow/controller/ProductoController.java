@@ -3,6 +3,7 @@ package com.travelNow.travelNow.controller;
 
 import com.travelNow.travelNow.dto.request.ProductoRequest;
 import com.travelNow.travelNow.dto.response.ProductoResponse;
+import com.travelNow.travelNow.service.ProductoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

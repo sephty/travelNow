@@ -36,7 +36,8 @@ public class BodegaController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<BodegaResponse> actualizar(@Valid @RequestBody BodegaRequest dto){
+    public ResponseEntity<BodegaResponse> actualizar(@PathVariable Long id,
+            @Valid @RequestBody BodegaRequest dto){
         return ResponseEntity.ok(bodegaService.actualizarBodega(id, dto));
     }
 

@@ -4,7 +4,7 @@ import com.travelNow.travelNow.dto.response.ProductoResponse;
 import com.travelNow.travelNow.dto.request.ProductoRequest
 import java.util.List;
 
-ProductoService {
+public interface ProductoService {
     ProductoResponse guardar(ProductoRequest dto);
     List<ProductoResponse> obtenerTodas();
     ProductoResponse actualizarProducto(Long id, ProductoRequest dto);
